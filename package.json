@@ -1,6 +1,6 @@
 {
   "name": "wordpressp-frontplate",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "WordPress Site Template for frontplate-cli",
   "dependencies": {},
   "devDependencies": {
