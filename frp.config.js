@@ -39,6 +39,7 @@ module.exports = function (production) {
     },
     copy: {
       [`${FRP_SRC}/view/inc/*`]: `${FRP_DEST}/inc/`,
+      [`${FRP_SRC}/view/functions/*`]: `${FRP_DEST}/functions/`,
       [`${FRP_SRC}/view/screenshot.png`]: `${FRP_DEST}/`
     },
     sprite: [],
