@@ -6,10 +6,11 @@ var PACKAGE = require('./package.json');
 module.exports = function (production) {
   global.THEME_NAME   = 'Sample Theme';
   global.THEME_DOMAIN = 'sampletheme';
-  global.FRP_SRC  = 'src/' + THEME_DOMAIN;
+  global.FRP_SRC  = 'src';
   global.FRP_DEST = 'wp/wp-content/themes/' + THEME_DOMAIN;
   return {
     clean: {
+      src: `${FRP_DEST}/assets`
     },
     html: {
       src: `${FRP_SRC}/view/**/*.{svg,html,php,css}`,   // 読み込むビューファイル
