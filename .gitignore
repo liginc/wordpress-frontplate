@@ -2,7 +2,6 @@
 .sass-cache
 .DS_Store
 node_modules
-public
 guide
 .env
 /wp/*
@@ -10,7 +9,8 @@ guide
 /wp/wp-content/*
 !/wp/wp-content/plugins/
 !/wp/wp-content/themes/
-/wp/wp-content/themes/*
+/wp/wp-content/themes/**/assets/
+/wp/wp-content/themes/**/images/
 !/wp/wp-content/languages/
 /wp/wp-content/languages/*
 !/wp/wp-content/languages/plugins/

@@ -1,0 +1,35 @@
+<?php
+/**
+ * The header for our theme
+ *
+ * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
+ */
+
+?>
+<!DOCTYPE html>
+<html <?php language_attributes(); ?>>
+<head>
+  <meta charset="<?php bloginfo( 'charset' ); ?>">
+  <title><?php wp_title('|'); ?></title>
+  <base href="/">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta property="og:locale" content="ja_JP">
+  <meta property="fb:admins" content="">
+  <meta property="og:title" content="">
+  <meta property="og:description" content="">
+  <meta property="og:url" content="">
+  <meta property="og:site_name" content="">
+  <meta property="og:type" content="blog">
+  <meta property="og:image" content="<?php echo get_template_directory_uri(); ?>/assets/images/common/logo_ogp.png">
+  
+  <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/assets/images/favicon.ico">
+  <link rel="apple-touch-icon-precomposed" href="<?php echo get_template_directory_uri(); ?>/assets/images/apple-touch-icon-precomposed.png">
+  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/style.css">
+  
+  <?php wp_head(); ?>
+</head>
+
+<body <?php body_class(); ?>>
