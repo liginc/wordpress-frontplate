@@ -9,6 +9,7 @@
   "scripts": {
     "start": "npm run build && npm run serve",
     "test": "frp build",
+    "wpstyle": "frp exe frp-plugins/wp-theme-style.js",
     "build": "docker-compose build && frp build",
     "serve": "run-p server:*",
     "server:web": "frp serve",
