@@ -15,4 +15,10 @@ guide
 /wp/wp-content/languages/*
 !/wp/wp-content/languages/plugins/
 !/wp/wp-content/languages/themes/
+/wp/wp-content/plugins/hello.php
+/wp/wp-content/themes/twentyfifteen*
+/wp/wp-content/themes/twentysixteen*
+/wp/wp-content/themes/twentyseventeen*
+/wp/wp-content/languages/themes/twenty*o
+*.map
 !.keep
