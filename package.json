@@ -19,7 +19,8 @@
     "server:web": "frp serve",
     "server:docker": "docker-compose up",
     "production": "frp build -p",
-    "changelog": "conventional-changelog -p eslint -i CHANGELOG.md -w -s -r 0"
+    "changelog": "conventional-changelog -p eslint -i CHANGELOG.md -w -s -r 0",
+    "sqldump": "sh scripts/mysqldump.sh"
   },
   "private": true
 }
