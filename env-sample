@@ -1,12 +1,10 @@
 # Copy and create ".env" file same directory
-XDEBUG_REMOTE_HOST=
 MYSQL_ROOT_PASSWORD=password
 MYSQL_DATABASE=wordpress
-PHP_ERROR_LOG=/proc/self/fd/2
 # Only first build
 WP_ROOT=/var/www/html
 WP_URL=http://localhost
-WP_VERSION=latest
+WP_VERSION=4.8.2
 WP_DB_PREFIX=wp_
 WP_ADMIN_USER=root
 WP_ADMIN_PASSWORD=root
