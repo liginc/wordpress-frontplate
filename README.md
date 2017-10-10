@@ -12,6 +12,13 @@
 
 ## Get Started
 
+必要に応じて、以下のファイルのテーマ名、テーマディレクトリ名を変更します。
+
+- frp.config.js
+- env-sample
+- src/sampletheme
+- wp/wp-content/themes/sampletheme
+
 `$ cp env-sample .env`
 
 and 
@@ -22,8 +29,12 @@ and
 
 ## Dump SQL
 
-`$ docker-compose exec mysql bash -c 'mysqldump -uroot -p$MYSQL_ROOT_PASSWORD -hlocalhost -B $MYSQL_DATABASE -v -r /docker-entrypoint-initdb.d/dump.sql && gzip -9vf /docker-entrypoint-initdb.d/dump.sql'
- `
+Run npm scripts command, below.
+
+`$ npm run sqldump`
+
+現在のmysqlサービスコンテナのデータベース情報を共有ボリュームに保存し永続化します。
+これにより、コンテナ作成時にデータベース情報が復元されるようになります。
 
 ## Changelog
 
@@ -34,4 +45,13 @@ and
 ### Create changelog
 
 `$ npm run changelog`
+
+## Update style.css
+
+`$ npm run wpstyle`
+
+package.jsonのバージョン情報で、WordPressテーマのstyle.cssを更新します。
+これにより、WordPressテーマからpackage.jsonのバージョン情報を参照できるようになります。
+静的ファイルのキャッシュコントロール用のパラメータなどとして使えます。
+
 
