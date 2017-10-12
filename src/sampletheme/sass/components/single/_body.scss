@@ -1,0 +1,94 @@
+.single-body {
+
+  h2 {
+    @include max-screen($breakpoint-mobile) {  }
+  }
+
+  h3 {
+
+  }
+
+  h4 {
+
+  }
+
+  p {
+
+  }
+
+  a {
+
+  }
+
+  strong {
+    font-weight: bold;
+  }
+
+  em {
+    font-style: italic;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  blockquote {
+
+  }
+
+  hr {
+    margin: 1em 0;
+    height: 1px;
+    border-top: 1px solid;
+  }
+
+  ul,
+  ol {
+
+  }
+
+  li {
+
+  }
+
+  ul {
+    li {
+
+    }
+  }
+
+  ol {
+    li {
+
+    }
+  }
+
+  // for youtube iframe
+  iframe {
+    max-width: 100% !important; // sass-lint:disable-line no-important
+    margin: 0 auto;
+    display: block;
+  }
+
+  .wp-caption {
+    // for div with inline style
+    width: 100% !important; // sass-lint:disable-line no-important
+  }
+
+  .wp-caption-text {
+
+  }
+
+  .aligncenter {
+    display: block;
+    margin: 0 auto;
+  }
+  .alignright {
+    float: right;
+  }
+  .alignleft {
+    float: left;
+  }
+
+}
