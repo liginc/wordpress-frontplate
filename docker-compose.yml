@@ -1,27 +1,16 @@
 version: '2'
 services:
-  nginx:
-    build: docker/images/nginx
-    mem_limit: 64m
-    ports:
-      - 80:80
-    depends_on:
-      - php
-    links:
-      - php:php
-    volumes:
-      - ./plugins:/wordpress/plugins
-      - ./wp:/var/www/html
-  php:
+  wordpress:
     env_file: .env
-    build: docker/images/php
+    image: liginccojp/wordpress
+    mem_limit: 256m
     depends_on:
       - mysql
+    ports:
+      - 80:80
     links:
       - mysql:mysql
-      - mailcatcher:mailcatcher
     volumes:
-      - ./plugins:/wordpress/plugins
       - ./wp:/var/www/html
   mysql:
     env_file: .env
@@ -31,8 +20,3 @@ services:
       - 3306:3306
     volumes:
       - ./sql:/docker-entrypoint-initdb.d:rw
-  mailcatcher:
-    image: schickling/mailcatcher
-    ports:
-      - 1080:1080
-      - 1025:1025
