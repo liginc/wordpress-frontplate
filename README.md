@@ -19,11 +19,23 @@
 - src/sampletheme
 - wp/wp-content/themes/sampletheme
 
+環境ファイルをコピーし、.envファイル作成します。
+
 `$ cp env-sample .env`
 
-and 
+必要なnpmパッケージをインストールします。
 
 `$ npm install`
+
+.envファイルの内容を元にして、WordPressがセットアップされます。
+WordPressのバージョンの初期値が「最新版」から固定バージョンになりましたので、適宜変更してください。これは、WordPressの最新版に対応した日本語版がない場合があるためです。
+
+phpバージョンの初期値は7.1になります。php5.6を利用したい場合は、docker-compose.ymlのwordpressイメージを下記の様に変更してください。
+```
+wordpress:
+  image: liginccojp/wordpress:php5.6
+  
+```
 
 `$ npm start`
 
