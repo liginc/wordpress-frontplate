@@ -14,7 +14,8 @@ module.exports = function (production) {
     style: production ? {} : {},
     script: production ? {} : {},
     server: {
-      proxy: 'localhost'
+      proxy: 'localhost',
+      files: FRP_DEST
     },
     copy: {},
     sprite: [],
