@@ -11,7 +11,7 @@ module.exports = function (production) {
     clean: {
       src: `${FRP_DEST}/assets`
     },
-    style: production ? {} : {},
+    style: production ? require('./config/style.config.production') : require('./config/style.config'),
     script: production ? {} : {},
     server: {
       proxy: 'localhost',
