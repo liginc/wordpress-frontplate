@@ -18,9 +18,10 @@
     "serve": "run-p server:*",
     "server:web": "frp serve",
     "server:docker": "docker-compose up",
-    "production": "frp build -p",
+    "production": "frp build -p && npm run anticache",
     "changelog": "conventional-changelog -p eslint -i CHANGELOG.md -w -s -r 0",
-    "sqldump": "sh scripts/mysqldump.sh"
+    "sqldump": "sh scripts/mysqldump.sh",
+    "anticache": "frp exe frp-plugins/anticache.js"
   },
   "private": true
 }
