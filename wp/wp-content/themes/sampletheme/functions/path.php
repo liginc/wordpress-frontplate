@@ -7,7 +7,7 @@ function get_current_uri() {
 }
 
 function resolve_asset_uri( $subpath = '' ) {
-  return esc_url( rtrim( get_template_directory_uri(), '/' ) . '/static/assets/' . ltrim( $subpath, '/' ) );
+  return esc_url( add_anticache( rtrim( get_template_directory_uri(), '/' ) . '/assets/' . ltrim( $subpath, '/' ) ) );
 }
 
 function resolve_url( $path = '' ) {
