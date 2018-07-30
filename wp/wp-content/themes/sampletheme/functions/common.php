@@ -154,13 +154,23 @@ function get_primary_term( $post_id, $tax = "category" ) {
 function add_anticache( $file ) {
   // anticache.jsonがある場合
   if('' !== (string) ANTICACHE_HASH){
+    // svg fragment identifierの可能性を考慮
+    $parts = explode('#', $file);
+    $fragment = '';
+
+    // #が含まれている場合
+    if(strpos($file, '#') !== false){
+      $fragment = "#{$parts[1]}";
+    }
+
     // ?が含まれていない場合
-    if(strpos($file, '?') === false){
+    if(strpos($parts[0], '?') === false){
       $delimeter = '?';
     } else {
       $delimeter = '&';
     }
-    $file = "{$file}{$delimeter}_=" . ANTICACHE_HASH;
+
+    $file = "{$parts[0]}{$delimeter}_=" . ANTICACHE_HASH . $fragment;
   }
 
   return $file;
