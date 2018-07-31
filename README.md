@@ -20,6 +20,9 @@ Note that you need Docker to be installed on your machine to proceed this.
 
 ```sh
 sh scripts/build.sh
+
+# More options available:
+# sh scripts/build.sh --help
 ```
 
 ## Launching Testing Environment Locally
