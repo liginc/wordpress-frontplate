@@ -28,6 +28,9 @@ module.exports = function (production) {
         version: packageJSON.version,
         domain: THEME_DOMAIN
       }
+    },
+    anticache: {
+      dest: FRP_DEST
     }
   }
 };
