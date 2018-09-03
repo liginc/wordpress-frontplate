@@ -9,9 +9,8 @@ guide
 /wp/wp-content/*
 !/wp/wp-content/plugins/
 !/wp/wp-content/themes/
-/wp/wp-content/themes/**/assets/
-/wp/wp-content/themes/**/images/
-/wp/wp-content/themes/**/anticache.json
+/wp/wp-content/themes/*/assets/
+/wp/wp-content/themes/*/anticache.json
 !/wp/wp-content/languages/
 /wp/wp-content/languages/*
 !/wp/wp-content/languages/plugins/
