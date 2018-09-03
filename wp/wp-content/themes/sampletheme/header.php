@@ -1,15 +1,14 @@
 <?php
 /**
- * The header for our theme
+ * The header for our theme.
  *
- * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
+ * @see https://developer.wordpress.org/themes/basics/template-files/#template-partials
  */
-
 ?>
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
-  <meta charset="<?php bloginfo( 'charset' ); ?>">
+  <meta charset="<?php bloginfo('charset'); ?>">
   <title><?php wp_title('|'); ?></title>
   <base href="/">
   <meta name="description" content="">
@@ -24,11 +23,11 @@
   <meta property="og:site_name" content="">
   <meta property="og:type" content="blog">
   <meta property="og:image" content="<?php echo get_template_directory_uri(); ?>/assets/images/common/logo_ogp.png">
-  
+
   <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/assets/images/favicon.ico">
   <link rel="apple-touch-icon-precomposed" href="<?php echo get_template_directory_uri(); ?>/assets/images/apple-touch-icon-precomposed.png">
   <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/style.css">
-  
+
   <?php wp_head(); ?>
 </head>
 
