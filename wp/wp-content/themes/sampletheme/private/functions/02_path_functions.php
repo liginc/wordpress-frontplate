@@ -1,11 +1,5 @@
 <?php
 
-function get_current_uri() {
-  $scheme = is_ssl() ? 'https' : 'http';
-
-  return "$scheme://{$_SERVER['HTTP_HOST']}{$_SERVER['REQUEST_URI']}";
-}
-
 function resolve_asset_uri( $subpath = '' ) {
   return esc_url( add_anticache( rtrim( get_template_directory_uri(), '/' ) . '/assets/' . ltrim( $subpath, '/' ) ) );
 }
