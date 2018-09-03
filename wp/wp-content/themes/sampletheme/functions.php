@@ -13,6 +13,6 @@ require_once( get_template_directory() . '/inc/define.php' );
 /*
  * functionsフォルダにあるファイルをすべて読み込む
 */
-foreach ( glob( TEMPLATEPATH . "/functions/*.php" ) as $file ) {
+foreach ( glob( TEMPLATEPATH . "/private/functions/*.php" ) as $file ) {
   require_once $file;
 }
