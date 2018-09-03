@@ -22,11 +22,11 @@
   <meta property="og:url" content="">
   <meta property="og:site_name" content="">
   <meta property="og:type" content="blog">
-  <meta property="og:image" content="<?php echo get_template_directory_uri(); ?>/assets/images/common/logo_ogp.png">
+  <meta property="og:image" content="<?php echo resolve_asset_url('/images/common/logo_ogp.png'); ?>">
 
-  <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/assets/images/favicon.ico">
-  <link rel="apple-touch-icon-precomposed" href="<?php echo get_template_directory_uri(); ?>/assets/images/apple-touch-icon-precomposed.png">
-  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/style.css">
+  <link rel="shortcut icon" href="<?php echo resolve_asset_url('/images/favicon.ico'); ?>">
+  <link rel="apple-touch-icon-precomposed" href="<?php echo resolve_asset_url('/images/apple-touch-icon-precomposed.png'); ?>">
+  <link rel="stylesheet" href="<?php echo resolve_asset_url('/css/style.css'); ?>">
 
   <?php wp_head(); ?>
 </head>

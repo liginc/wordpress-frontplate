@@ -6,8 +6,7 @@
  * @see https://developer.wordpress.org/themes/basics/template-files/#template-partials
  */
 ?>
-
-<?php wp_footer(); ?>
-<script src="<?php echo get_template_directory_uri(); ?>/assets/js/app.js" async></script>
+    <?php wp_footer(); ?>
+    <script src="<?php echo resolve_asset_url('/js/app.js'); ?>" async></script>
 </body>
 </html>
