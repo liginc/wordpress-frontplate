@@ -13,4 +13,4 @@ WP_CURRENT_THEME=sampletheme
 # Install plugins
 WP_INSTALL_PLUGINS=query-monitor wordpress-seo
 # Sample Plugin list
-# rewrite-rules-inspector addquicktag intuitive-custom-post-order
+# rewrite-rules-inspector addquicktag intuitive-custom-post-order gutenberg
