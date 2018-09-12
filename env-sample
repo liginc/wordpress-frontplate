@@ -16,6 +16,3 @@ WP_CURRENT_THEME=sampletheme
 # Sample:
 # rewrite-rules-inspector addquicktag intuitive-custom-post-order gutenberg
 WP_INSTALL_PLUGINS=query-monitor wordpress-seo
-
-# Init wp_options setup
-WP_OPTIONS_SETUP=blog_public:0 default_pingback_flag:0 thread_comments:0 comments_notify:0 show_avatars:0 use_smiles:0 ping_status:closed comment_status:closed
