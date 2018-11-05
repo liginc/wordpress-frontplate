@@ -15,7 +15,7 @@ module.exports = function (production) {
     script: production ? {} : {},
     server: {
       proxy: 'localhost',
-      files: FRP_DEST
+      files: `${FRP_DEST}/**/*.{php}`
     },
     copy: {},
     sprite: [],
